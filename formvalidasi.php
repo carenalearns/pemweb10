@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 	else {
 		$nama = cek_input($_POST["nama"]);
 		if (!preg_match("/^[a-zA-Z]*$/", $nama)) {
-			$namaErr="Inputan hanya boleh huruf dan spasi";
+			$error_nama="Inputan hanya boleh huruf dan spasi";
 		}
 	}
 
