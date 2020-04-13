@@ -341,7 +341,7 @@ function cek_input($data){
 			</p>
 			<div class="form-group row">
 				<label for="nama" class="col-sm-2 col-form-label">Nama Lengkap</label>
-				<div class="col-sm-10">
+				<div class="col-sm-8">
 					<input type="text" name="nama" class="form-control <?php echo ($error_nama !="" ? "is-invalid":"");?>" id="nama" placeholder="Nama Lengkap" value="<?php echo $nama;?>">
 					<span class="warning"><?php echo $error_nama; ?></span>
 				</div>
@@ -423,7 +423,7 @@ function cek_input($data){
 			</div>
 			<div class="form-group row">
 				<label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-				<div class="col-sm-10">
+				<div class="col-sm-8">
 					<input type="text" name="alamat" class="form-control <?php echo ($error_alamat !="" ? "is-invalid":"");?>" id="alamat" placeholder="Alamat Jalan" value="<?php echo $alamat;?>">
 					<span class="warning"><?php echo $error_alamat; ?></span>
 				</div>
@@ -508,7 +508,7 @@ function cek_input($data){
 			<div class="form-group row">
 				<label for="nokks" class="col-sm-2 col-form-label">No. KKS</label>
 				<div class="col-sm-5">
-					<input type="text" name="nokks" class="form-control <?php echo ($error_nokks !="" ? "is-invalid":"");?>" id="nokks" placeholder="Nomor Kartu Keluarga Sejahtera" value="<?php echo $nokks;?>">
+					<input type="text" name="nokks" class="form-control <?php echo ($error_nokks !="" ? "is-invalid":"");?>" id="nokks" placeholder="Nomor Kartu Keluarga Sejahtera *diisi bila memiliki" value="<?php echo $nokks;?>">
 					<span class="warning"><?php echo $error_nokks; ?></span>
 				</div>
 			</div>
@@ -521,7 +521,7 @@ function cek_input($data){
 			</div>
 			<div class="form-group row">
 				<label for="kps" class="col-sm-2 col-form-label">Penerima PKS/ PKH?</label>
-				<div class="col-sm-10">
+				<div class="col-sm-8">
 				    <label class="radio-inline <?php echo ($error_kps !="" ? "is-invalid":"");?>">
 				    <input type="radio" name="kps" value="Ya"> Ya
 					<input type="radio" name="kps" value="Tidak"> Tidak 
@@ -532,12 +532,12 @@ function cek_input($data){
 			<div class="form-group row">
 				<label for="nokps" class="col-sm-2 col-form-label">No. KPS/ PKH</label>
 				<div class="col-sm-5">
-					<input type="text" name="nokps" class="form-control <?php echo ($error_nokps !="" ? "is-invalid":"");?>" id="nokps" placeholder="Nomor KPS/ PKH" value="<?php echo $nokps;?>">
+					<input type="text" name="nokps" class="form-control <?php echo ($error_nokps !="" ? "is-invalid":"");?>" id="nokps" placeholder="Nomor KPS/ PKH *diisi bila memiliki" value="<?php echo $nokps;?>">
 					<span class="warning"><?php echo $error_nokps; ?></span>
 				</div>
 			</div>
 			<div class="form-group row">
-				<div class="col-sm-12">
+				<div class="col-sm-11">
 					<p class="text-info"><br>Catatan : Pastikan semua data terisi. Teliti dengan baik data yang telah dimasukkan sebelum disimpan.</p>
 				</div>
 			</div>
@@ -549,25 +549,6 @@ function cek_input($data){
 			</div>
 		</form>
 	</div>
-</div>
-</div>
-</div>
-</div>
-<br> <br>
-<div class="row">
-<div class="col-md-12">
-<div class="container">
-<p class="text-secondary">Berikut merupakan daftar data peserta didik yang berhasil disimpan :</p>
-<br>
-<div class="card">
-	<div class="card-header bg-primary text-white" align="center">
-		<b>DATA PESERTA DIDIK</b>
-	</div>
-<?php
-echo "<table>";
-echo "<tr><td>Nama</td><td>= ".$nama."</td><tr>";
-echo "<table>";
-?>
 </div>
 </div>
 </div>
