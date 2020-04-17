@@ -553,6 +553,9 @@ function cek_input($data){
 </div>
 </div>
 </div>
+<br>
+<center><a href="reportpd.php"><button class="btn btn-primary"> Ekspor Data Peserta Didik ke Excel </button></a></center>
+<br>
 </body>
 </html>
 <?php
